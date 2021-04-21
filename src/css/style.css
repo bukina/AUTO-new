@@ -1,11 +1,13 @@
 *{
     box-sizing: border-box;
 }    
-body{
+.container{
     max-width: 1280px;
     margin-left: 55px;
     margin-right: 55px;
 }
+
+
 .head{
     display: flex;
     max-width: 100%;
@@ -272,14 +274,15 @@ bottom: 0;
     margin-top: 11px;
 }
 .span_oldprice {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.3;
-    text-decoration-line: line-through;
-    color: #999999;
+  font-family: 'Rajdhani', sans-serif; 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  text-decoration-line: line-through;
+  
+  color: #999999;
 }
-.catalog__bot-text {
+.catalog__bot-text, .catalog__bot-text-shop {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 14px;
@@ -490,14 +493,270 @@ padding-left: 30px;
   display: flex;
   padding: 0;   
 }
-.menu__item{
+.menu__item-foot{
   margin: 0px 15px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.shop{
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__item-car-shop{
+background: #FFFFFF;
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+max-width: 16em;
+min-height: 17em;
+margin: 15px 15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-grow: 1;
+}
+
+.catalog__row-shop{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.black-price{
+  color:  #343434; 
+}
+.catalog__p-car-shop{
+font-family: 'Rajdhani', sans-serif;
+font-weight: bold;
+font-size: 20px;
+line-height: 1.3;
+color: #252A34;
+padding-left: 22px; 
+margin-top: 12px;
+
+}
+
+.catalog__price-shop{
+font-family: 'Rajdhani', sans-serif;
+font-weight: bold;
+font-size: 30px;
+line-height: 0.6;
+color: #FF2E63;
+padding-left: 22px; 
+margin-top: 11px;
+
+}
+
+.catalog__img-car-shop{
+  width: 100%;
+  object-fit: cover;
+}
+
+.shop-black-price{
+  color: #343434;
+}
+
+.catalog__reademore-btn{
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.catalog__readmore{
+  cursor: pointer;
+    border: none;
+    width: 110px;
+    height: 40px;
+    background: #FF2E63;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.shop__form{
+background: #FFFFFF;
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+min-width: 15em;
+max-height: 50em;
+margin-right: 15px;
+}
+
+.shop-section{
+  margin-top: 40px;
+}
+
+.shop__form-contacts{
+  display: flex;
+  flex-direction: column;
+}
+.shop__contacts-tel,  .shop__contacts-email, .shop__contacts-adress{
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.2;
+color: #252A34;
+}
+.span-contacts {
+
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.2;
+color: #252A34;
+
+
+}
+
+.shop__input{
+  padding: 10px 5px 15px 15px;
+}
 
 
 
+.accordion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__item {
+  
+  position: relative;
+}
+
+
+
+.accordion__title {
+  cursor: pointer;
+  margin: 0;
+  padding: 0.5em 0;
+
+}
+
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+
+}
+
+
+
+.accordion__toggle:checked ~ .accordion__content{
+  max-height: 300px;
+
+}
+
+
+.accordion__toggle{
+  width: 100%;
+  height: 2.1em;
+   margin: 0;
+  opacity: 0;
+  position:absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+
+}
+
+.accordion__conteant-ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.arrow-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__arrow-up{
+  position: relative;
+  left:4.5em;
+}
+.accordion__arrow-down{
+  opacity: 0;
+}
+
+.accordion__toggle:checked ~ .accordion__arrow-up{
+  opacity: 0;
+}
+.accordion__toggle:checked ~ .accordion__arrow-down{
+  opacity: 1;
+}
+
+.price-input{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 0;
+  
+
+}
+
+.shop__input-price{
+  width: 100px;
+  height: 30px;
+}
+
+.shop__input-price, .shop__input-search{
+border: 1px solid #999999;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.shop__input-search{
+  width: 230px;
+  height: 34px;
+
+}
+
+.shop__input{
+  width:267px;
+}
+
+.p-min, .p-max{
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #999999;
+}
+
+.checkbox-car{
+font-family: 'Inter', sans-serif;
+font-weight: normal;
+font-size: 15px;
+line-height: 22px;
+letter-spacing: -0.2px;
+color: #343434;
+}
+
+.shop__contacts{
+  margin: 57px 47px 0 30px;
+
+}
+
+.shop__form{
+  position: sticky;
+  top: 0;
+}
+
+.menu__item-a{
+  text-decoration: none;
+  color: #252A34;
+}
+
+.logo-a{
+  text-decoration: none;
+  color:#252A34;
 }

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Auto</title>
+
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Rajdhani:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header id="header-id" class="header container">
+        <div class="head">
+            <div class="head__logo">
+                <p class="head__p"><a class="logo-a"
+                        href="file:///C:/Users/Tetiana/Desktop/BEETROOT/Auto/index.html">LOGO<span
+                            class="head__span">Auto</span>
+                    </a></p>
+            </div>
+            <div class="head__menu menu">
+                <p class="menu__item">Home</p>
+                <p class="menu__item">About us</p>
+                <p class="menu__item">Shop</p>
+                <p class="menu__item">Blog</p>
+                <p class="menu__item">Contacts</p>
+                <p class="menu__item">How it works</p>
+            </div>
+            <div class="head__buttons">
+                <div class="head__btn-login btn-login">
+                    <ul class="btn-login_list">
+                        <li>L</li>
+                        <li>o</li>
+                        <li>g</li>
+                        <li>i</li>
+                        <li>n</li>
+                    </ul>
+                </div>
+                <div class="head__btn-register">
+                    <button class="head__register">
+                        Register
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="shop-section container">
+
+        <div class="shop">
+
+            <div class="shop__form-contacts">
+
+                <div class="shop__form">
+
+                    <div class="shop__input">
+
+                        <ul class="accordion">
+                            <li class="accordion__item">
+                                <input type="checkbox" class="accordion__toggle">
+                                <div class="arrow-div">
+                                    <h2 class="h2 accordion__title">Price
+                                    </h2>
+                                    <div class="accordion__arrow-up">&#9650;</div>
+                                    <div class="accordion__arrow-down">&#9660;</div>
+                                </div>
+                                <div class="accordion__content price-input">
+                                    <div class="price-min">
+                                        <p class="p-min">min</p>
+                                        <input id="input-price" class="shop__input-price" type="number" min="0">
+                                    </div>
+                                    <div class="price-max">
+                                        <p class="p-max">max</p>
+                                        <input class="shop__input-price" type="number" min="0">
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+
+
+                        <ul class="accordion">
+                            <li class="accordion__item">
+                                <input type="checkbox" class="accordion__toggle">
+                                <div class="arrow-div">
+                                    <h2 class="h2 accordion__title">Brands
+                                    </h2>
+                                    <div class="accordion__arrow-up">&#9650;</div>
+                                    <div class="accordion__arrow-down">&#9660;</div>
+                                </div>
+                                <div class="accordion__content">
+                                    <ul class="accordion__conteant-ul">
+                                        <li class="accordion__content-li">
+                                            <input class="checkbox-car" type="checkbox"> Toyota
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(13)
+                                        </li>
+                                        <li class="accordion__content-li">
+                                            <input class="checkbox-car" type="checkbox"> Toyota
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(13)
+                                        </li>
+                                        <li class="accordion__content-li">
+                                            <input class="checkbox-car" type="checkbox"> Toyota
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(13)
+                                        </li>
+                                        <li class="accordion__content-li">
+                                            <input class="checkbox-car" type="checkbox"> Toyota
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(13)
+                                        </li>
+                                        <li class="accordion__content-li">
+                                            <input class="checkbox-car" type="checkbox"> Toyota
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(13)
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                        <h2 class="search">Search</h2>
+                        <input class="shop__input-search" type="text" placeholder="Search by name...">
+
+                    </div>
+                </div>
+                <div class="shop__contacts">
+                    <h2 class="shop__contacnts-head">Contacts Details</h2>
+                    <a class="shop__contacts-tel" href="tel: 879-332-9375"><span class="span-contacts">Phone:</span>
+                        879-332-9375</a>
+                    <br>
+                    <br>
+                    <a class="shop__contacts-email" href="mailto: info@pixsellz.io"><span
+                            class="span-contacts">E-mail:</span> info@pixsellz.io</a>
+                    <br>
+                    <br>
+                    <a class="shop__contacts-adress" href="https://goo.gl/maps/egF3x5gyUcLYTFjv5"><span
+                            class="span-contacts">Adress:</span> 456 Hagenes
+                        Gardens Suite 808</a>
+
+                </div>
+
+            </div>
+
+            <div class="catalog">
+                <div class="catalog__header">
+                    <h2 class="catalog__h">Our products</h2>
+                </div>
+                <div class="catalog__row-shop">
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/7.jpg" alt="audi">
+                        <p class="catalog__p-car-shop">
+                            2016 Ford Mustang GT</p>
+                        <p class="catalog__price-shop">$7999 <span class="span_oldprice">$12000</span></p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/8.jpg" alt="ford">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop shop-black-price">$7999</p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/9.jpg" alt="bugatti">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop">$7999 <span class="span_oldprice">$12000</span></p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/10.jpg" alt="porsche">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop">$7999 <span class="span_oldprice">$12000</span></p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/11.jpg" alt="porsche">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop shop-black-price">$7999</p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/12.jpg" alt="porsche">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop">$7999 <span class="span_oldprice">$12000</span></p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/13.jpg" alt="porsche">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop">$7999 <span class="span_oldprice">$12000</span></p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/14.jpg" alt="porsche">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop shop-black-price">$7999</p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="catalog__item-car-shop">
+                        <img class="catalog__img-car-shop" src="img/15.jpg" alt="porsche">
+                        <p class="catalog__p-car-shop">2016 Ford Mustang</p>
+                        <p class="catalog__price-shop">$7999 <span class="span_oldprice">$12000</span></p>
+                        <p class="catalog__bot-text-shop">Available at our store</p>
+                        <div class="catalog__reademore-btn">
+                            <button class="catalog__readmore">
+                                Read more
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="div-footer">
+            <div class="div-footer__logo">
+                <p class="div-footer__p-logo">LOGOAUTO</p>
+            </div>
+            <div class="foot__menu">
+                <p class="menu__item-foot">Home</p>
+                <p class="menu__item-foot">About us</p>
+                <p class="menu__item-foot">Shop</p>
+                <p class="menu__item-foot">Blog</p>
+                <p class="menu__item-foot">Contacts</p>
+                <p class="menu__item-foot">How it works</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
