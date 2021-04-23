@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Rajdhani:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header container">
+        <div class="head">
+            <div class="head__logo">
+                <p class="head__p"><a class="logo-a"
+                        href="file:///C:/Users/Tetiana/Desktop/BEETROOT/Auto/index.html">LOGO<span
+                            class="head__span">Auto</span>
+                    </a></p>
+            </div>
+            <div class="head__menu menu">
+                <p class="menu__item"><span class="menu__item-span">Home</span></p>
+                <p class="menu__item">About us</p>
+                <p class="menu__item"> <a class="menu__item-a"
+                        href="file:///C:/Users/Tetiana/Desktop/BEETROOT/Auto/shop.html">Shop</a></p>
+                <p class="menu__item">Blog</p>
+                <p class="menu__item">Contacts</p>
+                <p class="menu__item"><a class="a-anchor" href="#howit">How it works</a></p>
+            </div>
+            <div class="head__buttons">
+                <div class="head__btn-login btn-login">
+                    <ul class="btn-login_list">
+                        <li>L</li>
+                        <li>o</li>
+                        <li>g</li>
+                        <li>i</li>
+                        <li>n</li>
+                    </ul>
+                </div>
+                <div class="head__btn-register">
+                    <button class="head__register">
+                        Register
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="form__register container form-log">
+        <form action="get" class="form__register-wrapper">
+            <h2 class="form__register-title">Log in</h2>
+            <div class="form__register-mail">
+                <label class="mail label" for="mail">E-mail</label>
+                <br>
+                <br>
+                <input class="input-email" id="mail" type="email" required>
+                <br>
+                <br>
+                <label class="mail label pass-log" for="pass-log">Password</label>
+                <br>
+                <br>
+                <input class="input-email" id="pass-log" type="password" required>
+            </div>
+            <div class="forgot-remember">
+                <p class="forgot">Forgot your password?</p>
+                <div class="input-remem">
+                    <input type="checkbox" class="remember" id="remem"><label for="remem" class="remember-label">
+                        Remeber
+                        me</label>
+                </div>
+            </div>
+
+            <button class="catalog__readmore login-btn">
+                Log in
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+
+
+    <ul class="accordion">
+        <li class="accordion__item">
+            <input type="checkbox" class="accordion__toggle">
+            <h2 class="h2 accordion__title">Log in
+            </h2>
+            <div class="accordion__content">
+                <div class="form__register container form-log">
+                    <form action="get" class="form__register-wrapper">
+                        <h2 class="form__register-title">Log in</h2>
+                        <div class="form__register-mail">
+                            <label class="mail label" for="mail">E-mail</label>
+                            <br>
+                            <br>
+                            <input class="input-email" id="mail" type="email" required>
+                            <br>
+                            <br>
+                            <label class="mail label pass-log" for="pass-log">Password</label>
+                            <br>
+                            <br>
+                            <input class="input-email" id="pass-log" type="password" required>
+                        </div>
+                        <div class="forgot-remember">
+                            <p class="forgot">Forgot your password?</p>
+                            <div class="input-remem">
+                                <input type="checkbox" class="remember" id="remem"><label for="remem"
+                                    class="remember-label">
+                                    Remeber
+                                    me</label>
+                            </div>
+                        </div>
+
+                        <button class="catalog__readmore login-btn">
+                            Log in
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="form__register container">
+        <form action="get" class="form__register-wrapper">
+            <h2 class="form__register-title">Create an account</h2>
+            <div class="form__register-names">
+                <div class="form__register-label">
+                    <label class="name label" for="name">First name</label>
+                    <label class="lastname label" for="lastname">Last name</label>
+                </div>
+                <br>
+                <div class="form__register-name-input">
+                    <input class="input-name" id="name" type="text" required>
+                    <input class="input-lastname" id="lastname" type="text" required>
+                </div>
+            </div>
+            <br>
+            <div class="form__register-mail">
+                <label class="mail label" for="mail">E-mail</label>
+                <br>
+                <br>
+                <input class="input-email" id="mail" type="email" required>
+
+            </div>
+
+            <br>
+            <div class="form__register-radio">
+                <input class="input-radio" type="radio" name="male"> <span class="label span-male">Male</span>
+                <input class="input-radio" type="radio" name="female"> <span class="label">Female</span>
+            </div>
+            <br>
+            <div class="form__register-names">
+                <div class="form__register-label password">
+                    <label class="pass label" for="pass">Password</label>
+                    <label class="passconf label" for="passconf">Confirm password</label>
+                </div>
+                <br>
+                <div class="form__register-name-input">
+                    <input class="input-name" id="pass" type="password" required>
+                    <input class="input-lastname" id="passconf" type="password" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="head__btn-register">
+                <button class="head__register">
+                    Register
+                </button>
+            </div>
+
+            <p class="forms__policy">By clicking the 'Sign Up' button, you confirm that you accept our <br> <span
+                    class="terms-span">Terms of use</span> and <span class="policy-span">Privacy policy</span>.</p>
+
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
