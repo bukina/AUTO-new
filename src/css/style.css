@@ -125,7 +125,6 @@
 .second-block {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 .second-block__proposition {
@@ -168,7 +167,9 @@
   transform: rotateX(360deg);
   transition: 3s;
 }
-
+.first-section {
+  position: relative;
+}
 .second-block__ellipse {
   position: absolute;
   max-width: 100%;
@@ -177,8 +178,8 @@
 .second-block__auto {
   position: absolute;
   max-width: 100%;
-  right: 5%;
-  top: 30%;
+  top: 40%;
+  right: 1%;
 }
 
 .section-catalog {
@@ -970,4 +971,222 @@ input {
 
 .accordion-register:checked ~ .hr-log-in {
   display: block;
+}
+
+.how__svg {
+  width: 40%;
+  margin: 0 auto;
+}
+.shop__contacts {
+  padding-bottom: 10px;
+}
+
+.burger {
+  display: none;
+}
+.burger__label {
+  display: none;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.burger__line {
+  width: 48px;
+  height: 5px;
+  background-color: black;
+}
+
+.catalog__item-car {
+  margin-top: 15px;
+}
+
+.reviews-row__column {
+  margin-top: 15px;
+}
+
+@media (max-width: 1240px) {
+  .second-block__auto {
+    position: absolute;
+    left: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .second-block__auto {
+    position: absolute;
+    left: 230px;
+  }
+}
+
+@media (max-width: 992px) {
+  .head__menu {
+    position: absolute;
+
+    width: 100vw;
+    top: 100px;
+    left: 140px;
+    z-index: 1;
+    transform: translateY(-50%);
+    transition: all 3s ease;
+    opacity: 0;
+  }
+
+  .burger:checked ~ .head__menu {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .burger__label {
+    display: flex;
+  }
+
+  .head__buttons {
+    visibility: hidden;
+  }
+
+  .burger__label {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 290px;
+  }
+
+  .second-block__text {
+    font-size: 35px;
+  }
+
+  .how__column-arrow {
+    display: none;
+  }
+
+  .div-danny__p-sign {
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media (max-width: 760px) {
+  .head__menu {
+    position: absolute;
+
+    width: 100vw;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+    transform: translateY(-50%);
+    transition: all 3s ease;
+    opacity: 0;
+  }
+
+  .burger:checked ~ .head__menu {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .burger__label {
+    display: flex;
+  }
+
+  .head__buttons {
+    visibility: hidden;
+  }
+
+  .burger__label {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 150px;
+  }
+
+  .second-block__text {
+    font-size: 30px;
+  }
+
+  .how__row {
+    flex-wrap: wrap;
+  }
+
+  .div-danny {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .div-danny__p-text {
+    position: absolute;
+  }
+  .div-danny__p-sign {
+    position: relative;
+    top: 180px;
+  }
+
+  .foot__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .div-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: #346cd9;
+}
+
+@media (max-width: 460px) {
+  .head__menu {
+    position: absolute;
+
+    width: 100vw;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+    transform: translateY(-50%);
+    transition: all 3s ease;
+    opacity: 0;
+  }
+
+  .burger:checked ~ .head__menu {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .burger__label {
+    display: flex;
+  }
+
+  .head__buttons {
+    visibility: hidden;
+  }
+
+  .burger__label {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 0px;
+  }
+
+  .second-block__text {
+    font-size: 25px;
+  }
+
+  .div-danny__p-sign {
+    position: relative;
+    top: 280px;
+  }
+}
+
+@media (hover) {
+  .catalog__item-car:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }
