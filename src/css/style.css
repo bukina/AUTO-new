@@ -1041,7 +1041,7 @@ input {
   }
 
   .burger__label {
-    display: flex;
+    display: in;
   }
 
   .head__buttons {
@@ -1066,6 +1066,7 @@ input {
   .div-danny__p-sign {
     position: relative;
     top: 5px;
+    
   }
 }
 
